@@ -1,0 +1,36 @@
+@media (max-width: 800px) {
+    label #btn{
+        display: inline-block;
+    }  
+    ul{
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width:50%;
+        height: 100vh;
+        background-color: #000;
+        padding-top: 80px;
+        display: block;
+        line-height: 40px;
+        z-index: 100;
+        transition: 0.5s;
+    }
+    ul li{
+        margin-left: 50px;
+    }
+    ul li a{
+        font-size: 20px;
+        color: #fff;
+    }
+    #check:checked ~ ul{
+        right: 0;
+    }
+    #check:checked ~ label #btn{
+        display: none;
+    }
+    #check:checked ~ label #cancel{
+        display: block;
+        z-index: 101;
+        color: #fff;
+    }
+}

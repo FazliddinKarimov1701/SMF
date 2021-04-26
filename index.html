@@ -6,25 +6,34 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Samandar Milk Foods</title>
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     </head>
     <body>
-        <nav>
-            <div id="first_menu">
-                <ul>
-                    <li>About</li>
-                    <li>Team</li>
-                </ul>
+        <div class="header">
+            <div class="container">
+                <nav>
+                    <div class="nav-bar">
+                        <!-- <img src="img/jug_milk_splash.jpg" alt=""> -->
+                        <h1>SMF</h1>
+                        <input type="checkbox" name="check" id="check">
+                        <label for="check">
+                            <i class='bx bx-menu' id="btn"></i>
+                            <i class='bx bx-x' id="cancel"></i>
+                        </label>
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Products</a></li>
+                            <li><a href="">Team</a></li>
+                            <li><a href="">Testimonals</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
-            <div id="logo">
-                <h1>SMF</h1>
-            </div>
-            <div id="second_menu">
-                <ul>
-                    <li>Products</li>
-                    <li>Contact</li>
-                </ul>
-            </div>
-        </nav>
+        </div>
+             
         <script src="js/main.js"></script>
     </body>
 </html>
