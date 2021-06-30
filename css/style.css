@@ -1,16 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap');
 .header{
     height: 80px;
     background: #fff;
     padding: 20px 0;
-    position: relative;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0px;
+    box-shadow: 0px 5px 5px 5px #80808045;
 }
 
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-weight: 10;
 }
 .nav-bar img{
     height: 20px;
@@ -24,23 +30,25 @@
 .nav-bar{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
-ul{
+#menu{
     display: flex;
     list-style-type: none;
     line-height: 35px;
+    align-items: center;
 }
-ul li{
+#menu li{
     margin: 0 20px;
 }
-ul li a{
+#menu li a{
     position: relative;
     font-size: 20px;
     text-decoration: none;
     color: #000;
     font-weight: 600;
 }
-ul li a::before{
+#menu li a::before{
     position: absolute;
     content: "";
     left: 0;
@@ -52,7 +60,7 @@ ul li a::before{
     transform: scaleX(0);
     transform-origin: right;
 }
-ul li a:hover::before{
+#menu li a:hover::before{
     transform: scaleX(1);
     transform-origin: left;
 }
@@ -67,4 +75,201 @@ label #btn, label #cancel{
 }
 #check{
     display: none;
+}
+section h2.section-heading {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 40px;
+}
+
+section h3.section-subheading {
+    margin-bottom: 75px;
+    text-transform: none;
+    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.timeline {
+    position: relative;
+    padding: 0;
+    list-style: none;
+}
+
+.timeline:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 40px;
+    width: 2px;
+    margin-left: -1.5px;
+    background-color: #f1f1f1;
+}
+
+.timeline>li {
+    position: relative;
+    margin-bottom: 50px;
+    min-height: 50px;
+}
+
+.timeline>li:before,
+.timeline>li:after {
+    content: " ";
+    display: table;
+}
+
+.timeline>li:after {
+    clear: both;
+}
+
+.timeline>li .timeline-panel {
+    float: right;
+    position: relative;
+    width: 100%;
+    padding: 0 20px 0 100px;
+    text-align: left;
+}
+
+.timeline>li .timeline-panel:before {
+    right: auto;
+    left: -15px;
+    border-right-width: 15px;
+    border-left-width: 0;
+}
+
+.timeline>li .timeline-panel:after {
+    right: auto;
+    left: -14px;
+    border-right-width: 14px;
+    border-left-width: 0;
+}
+
+.timeline>li .timeline-image {
+    z-index: 100;
+    position: absolute;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    margin-left: 0;
+    border: 7px solid #f1f1f1;
+    border-radius: 100%;
+    text-align: center;
+    color: #fff;
+    background-color: #1ee2e7;
+}
+
+.timeline>li .timeline-image h4 {
+    margin-top: 12px;
+    font-size: 10px;
+    line-height: 14px;
+}
+
+.timeline>li.timeline-inverted>.timeline-panel {
+    float: right;
+    padding: 0 20px 0 100px;
+    text-align: left;
+}
+
+.timeline>li.timeline-inverted>.timeline-panel:before {
+    right: auto;
+    left: -15px;
+    border-right-width: 15px;
+    border-left-width: 0;
+}
+
+.timeline>li.timeline-inverted>.timeline-panel:after {
+    right: auto;
+    left: -14px;
+    border-right-width: 14px;
+    border-left-width: 0;
+}
+
+.timeline>li:last-child {
+    margin-bottom: 0;
+}
+
+.timeline .timeline-heading h4 {
+    margin-top: 0;
+    color: inherit;
+}
+
+.timeline .timeline-heading h4.subheading {
+    text-transform: none;
+}
+
+
+.timeline .timeline-body>p,
+.timeline .timeline-body>ul {
+    margin-bottom: 0;
+}
+
+.custom-shape-divider-bottom-1619674691 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1619674691 svg {
+    position: relative;
+    display: block;
+    width: calc(108% + 1.3px);
+    height: 115px;
+}
+
+.custom-shape-divider-bottom-1619674691 .shape-fill {
+    fill: #FFFFFF;
+}
+
+header{
+    background: linear-gradient(180deg,rgba(128, 128, 128, 0.356), rgba(128, 128, 128, 0.356), rgba(128, 128, 128, 0.356)), url(../img/bg3.jpg);
+    background-origin: border-box;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 800px;
+    position: relative;
+    color: rgb(255, 245, 245);
+    margin-top: 80px;
+}
+#intro{
+    display: flex;
+    justify-content: center;
+}
+#intro > div{
+    text-align: center;
+    padding-top: 250px;
+}
+#intro div h1{
+    font-size: 70px;
+    font-weight: bold;
+}
+#intro div p{
+    font-size: 20px;
+
+}
+#intro_info{
+    width: 800px;
+    
+}
+p{
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+#btn_group button{
+    width: 140px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.233);
+    color: #17d6da;
+    outline: none;
+    border: 2px solid #1ee2e7;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: bold;
 }
