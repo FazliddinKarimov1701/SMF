@@ -5,6 +5,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Samandar Milk Foods</title>
+        <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -259,7 +261,87 @@
                 </div>
             </div>
         </section> 
+
+        <!-------------------  Testimonials section  -------------------->
+
+        <section id="testimonials">
+            <div id="testimonials-cover">
+                <h3 class="text-center">What our customers say</h3> 
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div id="customers-testimonial" class="text-center owl-carousel owl-theme">
+                                <div class="testimonial">
+                                    <img class="img-responsive img-circle" src="img/member1.jpg" alt="">
+                                    <blockquote class="text-center">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus
+                                             debitis cumque aliquam expedita soluta, illo sint reprehenderit maxime assumenda 
+                                            ipsa doloremque enim ea tempore, quae atque unde quidem sit sed!
+                                        </p>
+                                    </blockquote>
+                                    <div class="testimonial-author">
+                                        <p>
+                                            <strong>Daniel Thompson</strong>
+                                            <span>CEP & Founder - Google</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="testimonial">
+                                    <img class="img-responsive img-circle" src="img/member2.jpg" alt="">
+                                    <blockquote class="text-center">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus
+                                             debitis cumque aliquam expedita soluta, illo sint reprehenderit maxime assumenda 
+                                            ipsa doloremque enim ea tempore, quae atque unde quidem sit sed!
+                                        </p>
+                                    </blockquote>
+                                    <div class="testimonial-author">
+                                        <p>
+                                            <strong>Daniel Thompson</strong>
+                                            <span>CEP & Founder - Google</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="testimonial">
+                                    <img class="img-responsive img-circle" src="img/member3.png" alt="">
+                                    <blockquote class="text-center">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus
+                                             debitis cumque aliquam expedita soluta, illo sint reprehenderit maxime assumenda 
+                                            ipsa doloremque enim ea tempore, quae atque unde quidem sit sed!
+                                        </p>
+                                    </blockquote>
+                                    <div class="testimonial-author">
+                                        <p>
+                                            <strong>Daniel Thompson</strong>
+                                            <span>CEP & Founder - Google</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
+        <script src="OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/main.js"></script>
+        <script>
+            $(function(){
+    $("#customers-testimonial").owlCarousel({
+        items:1,
+        autoplay:true,
+        smartSpeed: 700,
+        loop:true,
+        autoPlayHoverPause:true
+    });
+});
+        </script>
     </body>
 </html>
