@@ -1,4 +1,4 @@
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
     label #btn{
         display: inline-block;
     }  
@@ -124,5 +124,42 @@
     .custom-shape-divider-bottom-1619674691 svg {
         width: calc(116% + 1.3px);
         height: 72px;
+    }
+}
+@media screen and (min-width: 700px){
+    #member-wrapper{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        transition: all .5s;
+    }
+    .member{
+        margin: 2rem;
+        transition: all 0.5s;
+    }
+    @keyframes fadeIn{
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
+    }
+    .member:nth-child(1){
+        animation: fadeIn.5s .5s backwards;
+    }
+    .member:nth-child(2){
+        animation: fadeIn.5s 1s backwards;
+    }
+    .member:nth-child(3){
+        animation: fadeIn.5s 1.5s backwards;
+    }
+    .member:nth-child(4){
+        animation: fadeIn.5s 2s backwards;
+    }
+    .member:hover{
+        transform: scale(1.05);
+        transition: all .8s;
     }
 }

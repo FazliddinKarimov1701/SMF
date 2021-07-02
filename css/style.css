@@ -10,7 +10,6 @@
     bottom: 0px;
     box-shadow: 0px 5px 5px 5px #80808045;
 }
-
 *{
     box-sizing: border-box !important;
     margin: 0;
@@ -80,7 +79,7 @@ label #btn, label #cancel{
 section h2.section-heading {
     margin-top: 0;
     margin-bottom: 15px;
-    font-size: 40px;
+    font-size: 50px;
 }
 
 section h3.section-subheading {
@@ -268,9 +267,9 @@ p{
     width: 140px;
     height: 40px;
     background-color: rgba(255, 255, 255, 0.233);
-    color: #17d6da;
+    color: #14c6c9;
     outline: none;
-    border: 2px solid #1ee2e7;
+    border: 2px solid #14c6c9;
     border-radius: 20px;
     font-size: 18px;
     font-weight: bold;
@@ -405,8 +404,125 @@ p{
     font-weight: bold;
     transition: 500ms ease;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 #products-button:hover{
     background-color: rgb(12, 201, 201);
     color: white;
+}
+#products{
+    background-color: rgba(219, 219, 219, 0.192);
+}
+
+#team-wrapper{
+    text-align: center;
+}
+#team-wrapper h2{
+    padding-top: 30px;
+}
+.member_btn{
+    text-decoration: none;
+}
+#member-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    transition: all .5s;
+}
+.member{
+    width: 25rem;
+    background-color: #ebeef8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+    box-shadow: .5rem .5rem 3rem rgba(0,0,0,0.2);
+}
+.member_bg{
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+    clip-path: polygon(0 0,100% 0%,100% 69%,0% 100%);
+}
+.member_picture{
+    width: 15rem;
+    height: 15rem;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: -9rem;
+    border: 1rem solid #ebeef8;
+    z-index: 1;
+}
+.member h3{
+    font-size: 2.5rem;
+    color: #333;
+}
+.member_job{
+    color: #777;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.member_info{
+    font-size: 20px;
+    padding: 0.5rem 1.2rem;
+    text-align: center;
+    color: #333;
+    font-weight: 500;
+}
+.member_btn{
+    padding: 7px 30px;
+    background-color: aqua;
+    font-size: 25px;
+    font-weight: 800;
+    border-radius: 2rem;
+    transition: all .5s;
+    color: white;
+}
+.member_btn:hover{
+    color: #333;
+    background-color: #70a1ff;
+    transform: translateY(-4px);
+    box-shadow: .5rem .5rem 2rem #70a1ff;
+}
+.member_btn:active{
+    color: #eee;
+    transform: translateY(0px);
+    box-shadow: none;
+    background: #111;
+}
+.member_social_media{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 13px;
+    margin-top: 1.5rem;
+    border-top: 1px solid rgba(0,0,0,0.3);
+}
+.member_social_media i{
+    font-size: 27px;
+    transition: all .5s;
+    color: #666;
+}
+.fa-facebook:hover{
+    color: #3b5999;
+    transform: translateY(-0.5rem);
+    text-shadow: .5rem .5rem .5rem #3867d6;
+}
+.fa-twitter:hover{
+    color: #55acee;
+    transform: translateY(-0.5rem);
+    text-shadow: .5rem .5rem .5rem #55e6c1;
+}
+.fa-instagram:hover{
+    color: #6d214f;
+    transform: translateY(-0.5rem);
+    text-shadow: .5rem .5rem .5rem #6D214F;
+}
+.fa-linkedin:hover{
+    color: #0652dd;
+    transform: translateY(-0.5rem);
+    text-shadow: .5rem .5rem .5rem #1b9cfc;
 }
